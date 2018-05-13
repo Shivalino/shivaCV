@@ -1,24 +1,267 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>My first html</title>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>ShivaCV</title>
 	<meta charset="utf-8">
+	<style type="text/css">
+		#Container{
+			/*border: 5px solid tomato;*/
+			width: 50%;
+			position: absolute;
+			left: 25%;
+			border-style: solid;
+			border-color: #D3D3D3;
+		}
+			#Title{
+				margin: 0px;
+				background: #3D4F5B;
+				color: white;
+				text-align: center;
+				font: 36px Calibri;
+				padding-bottom: 20px;
+				padding-top: 20px;
+
+			}
+			#MainInformation{
+				display: flex;
+			}
+				#LeftColumne{
+					background: linear-gradient(to right, #424242 0%, #6E6E6E 100%);
+				}
+					#Photo{
+						width: 170px;
+						height: 170px;
+						border-style: solid;
+						border-color: #D3D3D3;
+						border-radius:60px;
+						margin: 40px;
+					}
+					#Name{
+						font: 42px/16px Calibri;
+						margin-left: 10px;
+						margin-bottom: 10px;
+						color: white;
+						text-align: left;
+						
+					}
+					#Hobby1{
+						font: 14px Calibri;
+						background: #FFA500;
+						margin: 8px;
+						border-spacing: 2px;
+						width: 170px;
+						border-radius: 15px;
+					}
+					#Hobby2{
+						font: 14px Calibri;
+						background: #0174DF;
+						margin: 8px;
+						border-spacing: 2px;
+						width: 100px;
+						border-radius: 15px;
+					}
+					#Hobby3{
+						font: 14px Calibri;
+						background: #008000;
+						margin: 8px;
+						border-spacing: 2px;
+						width: 250px;
+						border-radius: 15px;
+					}
+					#Contacts{
+						color: white;
+						font: 22px Calibri;
+						margin: 15px 50px;
+						text-align: left;
+					}
+				#RightColumne{
+					width: 75%
+				}
+		.TextNone1{
+			border-bottom: 3px solid yellow;
+			font: 16px Calibri;
+			color: #0CB5F2;
+			margin-top: 5px;
+			margin: 0px 5px;
+		}
+		.TextNone2{
+			border-bottom: 2px solid royalblue;
+			font: 22px Calibri;
+			color: #084B8A;
+			margin: 5px 15px;
+			text-align: left;
+			padding:5px 0px;
+		}
+		.TextUnderline{
+			font: bold 18px Calibri;
+			color: white;
+			text-decoration: underline;
+			text-align: center;
+			margin: 14px 0px;
+		}
+		.Hobby{
+			font: bold 20px Calibri;
+			color: white;
+			text-align: center;
+			margin: 14px 0px;
+		}
+		a{ color:  deepskyblue;
+		 }
+		a:visited{ color: gold;
+		 }
+		ul{
+			padding: 0px 5px;
+			margin: 5px;
+		}
+		.li{
+		 	list-style-type: none;
+		 	text-align: left;
+		}
+		.li:before{
+		 	content: "-";
+		}
+	</style>
+</style>
 </head>
 <body>
-	<h1>&#9728; this is <u>h1</u> paragraph &#9728;</h3>
-	<h2>this is h2 paragraph</h2>
-	<h3>this is h3 paragraph</h1>
-	<pre>
-		Текст, текст
-			текст
-	</pre>
+	<div id="Container">
+		<div>
+			<h2 id="Title">Curriculum vitae</h2>
+		</div>
+		<div id="MainInformation">
+			<div id="LeftColumne">
+				<div>
+					<img id="Photo" src="index_files/0.png" alt="ShadrinVA">
+				</div>
+				<div class="TextNone1">
+					<p id="Name">Viacheslav</p>
+					<p id="Name">Shadrin</p>
+				</div>
+				<div class="TextUnderline">
+					Hobby:
+				</div>
+				<div class="Hobby">
+					<table id="Hobby1">
+						<tbody><tr>
+							<td>
+								Painting
+							</td>
+						</tr>
+						</tbody>
+					</table>
+					<table id="Hobby2">
+						<tbody>
+						<tr>
+							<td>
+								Ceramics
+							</td>
+						</tr>
+						</tbody>
+					</table>
+					<table id="Hobby3">
+						<tbody><tr>
+							<td>
+								Phylosophy
+							</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="TextUnderline">
+					Contacts:
+					<ul id="Contacts">
+						<li>
+							<a href="https://www.facebook.com/shadrin.slava" target="_blank">
+								VK
+							</a>
+						</li>
+						<li>
+							<a href="https://ok.com/" target="_blank">
+								OK
+							</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/shadrin.slava" target="_blank">
+								Facebook
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="RightColumne">
+				<div class="TextNone2">
+					<table>
+						<tbody><tr>
+							<th>Birth Date
+							</th>
+						</tr>
+						<tr>
+							<td>Feb 10 1979
+							</td>
+						</tr>
+						<tr>
+							<th>Birth Place</th>
+						</tr>
+						<tr>
+							<td>USSR
+							</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="TextNone2">
+					<table>
+						<tbody><tr>
+							<th>
+								Skills:
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<ul>
+									<li class="li">
+										JIRA
+									</li>
+									<li class="li">
+										Linux
+									</li>
+									<li class="li">
+										Windows Server
+									</li>
+								</ul>
+							</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="TextNone2">
+					<table>
+						<tbody><tr>
+							<th>
+								Soft skills:
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<ul>
+									<li class="li">
+										Ability to manage projects.
+									</li>
+									<li class="li">
+										Ability to work within tight deadlines.
+									</li>
+									<li class="li">
+										Self-motivator, team player, sociable and responsible,
+									</li>
+									<li class="li">
+										Punctual and attentive to details, hardworking and result oriented/
+									</li>
+								</ul>
+							</td>
+						</tr>
+					</tbody></table>
+				</div>
+			</div>
+		</div>
+	</div>
 
-		<li>slkdjfskljdlkjfd</li>
-		<li>asdfasdfasdfasdf</li>
 
-	<ol>
-		<li>slkdjfskljdlkjfd</li>
-		<li>asdfasdfasdfasdf</li>
-	</ol>
-</body>
-</html>
+</body></html>
